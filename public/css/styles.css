@@ -197,6 +197,9 @@ ul {
 
 @media (min-width: 768px) {
     /* TABLET */
+    .md-w-30 {
+        width: 33%;
+    }
     .md-w-50 {
         width: 48%;
     }
