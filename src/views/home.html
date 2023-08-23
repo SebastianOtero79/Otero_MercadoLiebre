@@ -25,25 +25,26 @@
 <body class="f-roboto bg-grey">
 
     <!-- ACA VA EN ENCABEZADO    -->
-    <header class="f-roboto fs-16 bg-yellow">
-        <h1>
+    <header class="f-roboto p-1 fs-16 bg-yellow flex flex-wrap">
+        <h1 class="w-50">
             <img src="images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" width="100%" height="auto" />
         </h1>
 
-        <div>
-            <p class="bg-white mg-t-10 mg-b-10">Lugar para poner la barra de búsqueda</p>
-            <p class="mg-t-10 mg-b-10">
-                <i class="fa-solid fa-magnifying-glass p-1 bg-white border-radius-5 border-black"></i>
-            </p>
+        <div class="w-50 p-20 align-center">
+            <form action="/" class="p-1 flex radius-1 bg-white">
+                <input class="flex-grow b-none outline-none fs-18" type="text" name="search"
+                    placeholder="Busca productos por nombres, marcas o palabras clave" />
+                <button type="submit" class="bg-white b-none">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
         </div>
-        <!-- la barra de busqueda no deberia ir en un nav, mas bien en un div-->
-
-        <div class="text-center mg-t-10 mg-b-10">
-            <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y si
+        <p class="text-center mg-t-10 mg-b-10 w-100">
+            <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin
             tarjeta de crédito
-        </div>
+        </p>
 
-        <nav>
+        <nav class="w-100 display-menu">
             <ul class="p-1">
                 <li><a href="#" class="text-decoration-none fc-black">Ofertas</a></li>
                 <li><a href="#" class="text-decoration-none fc-black">Tiendas Oficiales</a></li>
@@ -67,117 +68,57 @@
             </ul>
             <!-- Menu Hamburguesa -->
         </nav>
-        <div class="burger-menu text-center">
+        <div class="burger-menu text-center w-100">
             <i class="fas fa-bars bg-blue fc-white p-1 border-radius-5">
             </i>
         </div>
     </header>
-
-    <!-- ACA VA EL MAIN -->
+    <img class="w-100" src="/images/img-home-banner.jpg" alt="Promocion fiestas"> <!-- ACA VA EL MAIN -->
     <main class=" mg-x-auto vw-90 bg-grey">
         <section class="p-1 flex flex-wrap gap">
             <h2 class="fs-24 w-100">Basado en tu ultima visita</h2>
 
             <article class="bg-white mg-t-10 mg-b-10 shadow w-100 md-w-50 lg-w-25">
                 <img src="/images/img-cafetera-moulinex.jpg" alt="Cafetera" width="100%" height="auto" />
-                <div class="bt-1 border-grey p-1 ">
-                    <div p-15>
-                        <i class="fa-solid fa-truck truck-icon"></i>
-                        <p class="fs-18">$6.770</p>
-                        <p class="fs-16 fc-green">40% OFF</p>
-                        <p class="fs-16 fc-grey mg-t-15 display-none display-md display-lg">Cafetera Moulinex</p>
-                    </div>
+                <div class="bt-1 border-grey p-1 relative flex flex-wrap">
+                    <i class="fa-solid fa-truck truck-icon"></i>
+                    <p class="fs-18 mr-1">$6.770</p>
+                    <p class="fs-16 fc-green">40% OFF</p>
+                    <p class="fs-16 fc-grey mg-t-15 display-none display-md display-lg">Cafetera Moulinex</p>
                 </div>
             </article>
 
             <article class="bg-white mg-t-10 mg-b-10 shadow w-100 md-w-50 lg-w-25">
                 <img src="images/img-macbook-pro-2019.jpg" alt="MacBook 2019" width="100%" height="auto" />
-                <div class="bt-1 border-grey p-1 ">
-                    <div p-15>
-                        <i class="fa-solid fa-truck truck-icon"></i>
-                        <p class="fs-18">$230.000</p>
-                        <p class="fs-16 fc-green">20% OFF</p>
-                        <p class="fs-16 fc-grey mg-t-15 display-none display-md display-lg">MacBook Pro 2019</p>
-                    </div>
+                <div class="bt-1 border-grey p-1  relative flex flex-wrap">
+                    <i class="fa-solid fa-truck truck-icon"></i>
+                    <p class="fs-18 mr-1">$230.000</p>
+                    <p class="fs-16 fc-green">20% OFF</p>
+                    <p class="fs-16 fc-grey mg-t-15 display-none display-md display-lg">MacBook Pro 2019</p>
                 </div>
             </article>
 
             <article class="bg-white mg-t-10 mg-b-10 shadow w-100 md-w-50 lg-w-25">
                 <img src="images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy" width="100%" height="auto" />
-                <div class="bt-1 border-grey p-1 ">
-                    <div p-15>
-                        <i class="fa-solid fa-truck truck-icon"></i>
-                        <p class="fs-18">$70.500</p>
-                        <p class="fs-16 fc-green">10% OFF</p>
-                        <p class="fs-16 fc-grey mg-t-15 display-none display-md display-lg">Samsung Galaxy S10</p>
-                    </div>
+                <div class="bt-1 border-grey p-1  relative flex flex-wrap">
+                    <i class="fa-solid fa-truck truck-icon"></i>
+                    <p class="fs-18 mr-1">$70.500</p>
+                    <p class="fs-16 fc-green">10% OFF</p>
+                    <p class="fs-16 fc-grey mg-t-15 display-none display-md display-lg">Samsung Galaxy S10</p>
                 </div>
             </article>
 
             <article class="bg-white mg-t-10 mg-b-10 shadow w-100 md-w-50 lg-w-25">
                 <img src="images/img-tv-samsung-smart.jpg" alt="SmartTv Samsung" width="100%" height="auto" />
-                <div class="bt-1 border-grey p-1 ">
-                    <div p-15>
-                        <i class="fa-solid fa-truck truck-icon"></i>
-                        <p class="fs-18">$23.200</p>
-                        <p class="fs-16 fc-green">5% OFF</p>
-                        <p class="fs-16 fc-grey mg-t-15 display-none display-md display-lg">SmartTv Samsung 43"</p>
-                    </div>
+                <div class="bt-1 border-grey p-1  relative flex flex-wrap">
+                    <i class="fa-solid fa-truck truck-icon"></i>
+                    <p class="fs-18 mr-1">$23.200</p>
+                    <p class="fs-16 fc-green">5% OFF</p>
+                    <p class="fs-16 fc-grey mg-t-15 display-none display-md display-lg">SmartTv Samsung 43"</p>
                 </div>
             </article>
         </section>
 
-        <section class="p-1 flex flex-wrap gap">
-            <h2 class="fs-24 w-100">Ofertas</h2>
-
-            <article class="bg-white mg-t-10 mg-b-10 shadow w-100 md-w-50 lg-w-25">
-                <img src="/images/img-cafetera-moulinex.jpg" alt="Cafetera" width="100%" height="auto" />
-                <div class="bt-1 border-grey p-1 ">
-                    <div p-15>
-                        <i class="fa-solid fa-truck truck-icon"></i>
-                        <p class="fs-18">$6.770</p>
-                        <p class="fs-16 fc-green">40% OFF</p>
-                        <p class="fs-16 fc-grey mg-t-15 display-none display-md display-lg">Cafetera Moulinex</p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="bg-white mg-t-10 mg-b-10 shadow w-100 md-w-50 lg-w-25">
-                <img src="images/img-macbook-pro-2019.jpg" alt="MacBook 2019" width="100%" height="auto" />
-                <div class="bt-1 border-grey p-1 ">
-                    <div p-15>
-                        <i class="fa-solid fa-truck truck-icon"></i>
-                        <p class="fs-18">$230.000</p>
-                        <p class="fs-16 fc-green">20% OFF</p>
-                        <p class="fs-16 fc-grey mg-t-15 display-none display-md display-lg">MacBook Pro 2019</p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="bg-white mg-t-10 mg-b-10 shadow w-100 md-w-50 lg-w-25">
-                <img src="images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy" width="100%" height="auto" />
-                <div class="bt-1 border-grey p-1 ">
-                    <div p-15>
-                        <i class="fa-solid fa-truck truck-icon"></i>
-                        <p class="fs-18">$70.500</p>
-                        <p class="fs-16 fc-green">10% OFF</p>
-                        <p class="fs-16 fc-grey mg-t-15 display-none display-md display-lg">Samsung Galaxy S10</p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="bg-white mg-t-10 mg-b-10 shadow w-100 md-w-50 lg-w-25">
-                <img src="images/img-tv-samsung-smart.jpg" alt="SmartTv Samsung" width="100%" height="auto" />
-                <div class="bt-1 border-grey p-1 ">
-                    <div p-15>
-                        <i class="fa-solid fa-truck truck-icon"></i>
-                        <p class="fs-18">$23.200</p>
-                        <p class="fs-16 fc-green">5% OFF</p>
-                        <p class="fs-16 fc-grey mg-t-15 display-none display-md display-lg">SmartTv Samsung 43"</p>
-                    </div>
-                </div>
-            </article>
-        </section>
 
 
     </main>

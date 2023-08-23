@@ -1,5 +1,10 @@
 * {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+}
+.align-center {
+    align-self: center;
 }
 .f-roboto {
     font-family: 'Roboto'
@@ -105,14 +110,8 @@ ul {
 .p-15 {
     padding: 15px;
 }
-.truck-icon {
-    color: green;
-    border: green solid 1px;
-    border-radius: 50%;
-    padding: 5px;
-   /* position: absolute;
-    right: 15px;
-    top: -15px; */
+.p-20 {
+    padding: 20px;
 }
 .w-100 {
     width: 100%;
@@ -121,12 +120,65 @@ ul {
     width: 90vw;
 }
 
+
+.block {
+    display: block;
+}
+
+.truck-icon {
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.relative {
+    position: relative;
+}
+.mr-1 {
+    margin-right: 8px;
+}
+.w-50 {
+    width: 50%;
+}
+
+.radius-1 {
+    border-radius: 5px;
+}
+.flex-grow {
+    flex-grow: 1;
+}
+.b-none {
+    border: none;
+}
+.outline-none {
+    outline: none;
+}
+
+.display-menu {
+    display: none;
+}
+
+/*ACA VIENEN LOS MEDIA QUERIES*/
+
+
+
+ 
+
 @media (min-width: 481px) {
     /* TABLET */
     .md-w-50 {
         width: 48%;
     }
-    .display-m {
+    .display-menu {
         display: initial;
     }
     .shadow {
@@ -139,9 +191,4 @@ ul {
         width: 23%
     }
    
-}
-@media (max-width:480px) {
-    .display-none {
-        display: none;
-    }
 }
