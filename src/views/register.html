@@ -76,4 +76,88 @@
     <img class="w-100" src="/images/img-home-banner.jpg" alt="Promocion fiestas">
 
     <!-- ACA VA EL MAIN -->
-    <main> REGISTRO</main>
+
+    <main class="flex flex-wrap">
+        <h1 class="block w-100 text-center"> FORMULARIO DE REGISTRO</h1>
+
+        <form action="/registro" method="post" class="flex flex-wrap w-100 f-direction-col">
+            <p class="flex flex-wrap w-50 mg-x-auto p-1">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" class="w-100 fs-16">
+            </p>
+
+            <p class="flex flex-wrap w-50 mg-x-auto p-1">
+                <input type=" text" name="usuario" id="usuario" placeholder="Nombre de usuario" class=" w-100 fs-16">
+            </p>
+
+            <p class="flex flex-wrap w-50 mg-x-auto p-1">
+                <input type=" email" name="email" id="email" placeholder="E-mail" class="w-100 fs-16">
+            </p>
+
+            <p class="flex f-direction-col flex-wrap w-50 mg-x-auto p-1">
+                <label for="fecha_nacimiento" class="block"><strong> Fecha de Nacimiento:</strong></label>
+                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" class="w-100 fs-16 fc-grey mg-t-10">
+            </p>
+
+            <p class="flex flex-wrap w-50 mg-x-auto p-1">
+                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" class="w-100 fs-16">
+            </p>
+
+            <div class="flex flex-wrap w-50 mg-x-auto p-1 ">
+                <label for="perfil_usuario" class="block fs-16 w-100 mg-b-10"><strong>Perfil de
+                        usuario:</strong></label>
+                <p class="flex mg-x-auto mg-t-10">
+                    <input type="radio" name="perfil_usuario" id="perfil_usuario" value="Comprador"
+                        class="fs-16 fc-grey mr-1  "> Comprador
+                </p>
+                <p class="flex mg-x-auto mg-t-10">
+                    <input type="radio" name="perfil_usuario" id="perfil_usuario" value="Vendedor"
+                        class="fs-16 fc-grey mr-1  "> Vendedor
+                </p>
+            </div>
+            <div class="flex flex-wrap w-50 mg-x-auto p-1 ">
+                <label for="intereses" class="block fs-16 w-100 mg-b-10"><strong>Intereses:</strong></label>
+                <p class="w-100 ml-2">
+                    <input type="checkbox" name="intereses" id="intereses" value="Electro"
+                        class="fs-16 fc-grey mr-1 mg-t-10">Electro
+                </p>
+
+                <p class="w-100 ml-2">
+                    <input type="checkbox" name="intereses" id="intereses" value="Moda"
+                        class="fs-16 fc-grey mr-1 mg-t-10">Moda
+                </p>
+
+                <p class="w-100 ml-2">
+                    <input type="checkbox" name="intereses" id="intereses" value="Hogar"
+                        class="fs-16 fc-grey mr-1 mg-t-10">Hogar
+                </p>
+
+                <p class="w-100 ml-2">
+                    <input type="checkbox" name="intereses" id="intereses" value="Jugueteria"
+                        class="fs-16 fc-grey mr-1 mg-t-10">Jugueteria
+                </p>
+
+                <p class="w-100 ml-2">
+                    <input type="checkbox" name="intereses" id="intereses" value="Vida sana"
+                        class="fs-16 fc-grey mr-1 mg-t-10">Vida sana
+                </p>
+
+                <div class="w-100 text-center flex-wrap">
+                    <button type="reset"
+                        class="fs-16 bg-white p-1 border-radius-5 mg-t-30 text-center mr-1 w-25">Borrar</button>
+                    <button type="submit"
+                        class="fs-16 bg-white p-1 border-radius-5 mg-t-30 text-center mr-1">Enviar</button>
+                </div>
+
+
+
+            </div>
+
+        </form>
+
+
+
+
+
+
+
+    </main>
