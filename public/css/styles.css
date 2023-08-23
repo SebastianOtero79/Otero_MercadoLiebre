@@ -167,13 +167,32 @@ ul {
     display: none;
 }
 
+.flex-no-wrap {
+    flex-wrap: nowrap;
+}
+
+.d-i-f {
+    display: inline-flex;
+}
+.w-40 {
+    width: 40%;
+}
+.w-49 {
+    width: 49%;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+.w-35 {
+    width: 30%;
+}
+
+
 /*ACA VIENEN LOS MEDIA QUERIES*/
 
 
-
- 
-
-@media (min-width: 481px) {
+@media (min-width: 768px) {
     /* TABLET */
     .md-w-50 {
         width: 48%;
@@ -181,11 +200,14 @@ ul {
     .display-menu {
         display: initial;
     }
+    .display-burger {
+        display: none;
+    }
     .shadow {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
         /* DESKTOP */
     .lg-w-25 {
         width: 23%
